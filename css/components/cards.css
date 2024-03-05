@@ -1,0 +1,27 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: linear-gradient(to left top,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.5));
+    border-radius: 1rem;
+    margin: 2rem 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+}
+
+.card img {
+    width: 400px;
+    height: 400px;
+    border-radius: 1rem;
+}
+
+.card-info {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
