@@ -1,0 +1,41 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1270px;
+    min-height: 10px;
+    margin: 74px auto;
+    margin-bottom: 127px;
+    padding: 110px;
+    background-image: linear-gradient(to bottom, #000000, rgb(34, 15, 68));
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 2em;
+}
+
+.faq h2 {
+    font-family: 'helvetica';
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #acacac;
+    font-size: 30px;
+    margin-bottom: 27px;
+    margin-top: 54px;
+}
+
+.faq h4 {
+    font-family: 'helvetica';
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgb(111, 111, 111);
+    font-size: 18px;
+    max-width: 700px;
+}
+
+@media (max-width: 1190px) {
+    .faq {
+        padding-left: 27px;
+        padding-right: 27px;
+        padding-top: 0px;
+    }
+}

@@ -1,0 +1,187 @@
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height: 800px) {
+    footer {
+        position: static;
+    }
+}
+
+.footer-distributed {
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.60) 100%, rgba(0, 0, 0, 0.60) 100%), url(../../footer.jpeg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px;
+    padding: 50px 174px 60px 174px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed h2 {
+    display: block;
+    color: #ffc778;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.footer-distributed h4 {
+    font-family: 'Lato';
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 50%;
+}
+
+.footer-distributed .footer-left .email-box {
+    height: 40px;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 25px;
+}
+
+.footer-distributed .footer-left .email-box img {
+    width: 35px;
+    color: #ffffff;
+    border-radius: 17px;
+}
+
+.footer-tbox,
+.footer-btn {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}
+
+.footer-tbox {
+    width: 0px;
+    transition: 0.3s;
+    font-family: 'Lato';
+    letter-spacing: 2px;
+}
+
+.email-box:hover>.footer-tbox,
+.footer-tbox:focus {
+    width: 260px;
+    padding: 0 10px;
+}
+
+.footer-btn {
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Lato';
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.footer-btn:hover {
+    color: #ffc778;
+}
+
+.email-box input {
+    font-family: 'Lato';
+    color: white;
+}
+
+.email-box input::placeholder {
+    color: rgba(255, 255, 255, 0.74);
+}
+
+.footer-distributed .footer-company-name {
+    font-family: 'Lato';
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 40%;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #00000000;
+    border-radius: 27px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    transition: 0.17s;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+}
+
+@media (max-width: 880px) {
+
+    .footer-distributed {
+        padding: 50px 50px 60px 50px;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-left .email-box {
+        padding-left: 100px;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer-distributed .footer-left .email-box {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-distributed .footer-left .email-box {
+        padding-left: 0px;
+    }
+}

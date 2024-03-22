@@ -1,0 +1,45 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1270px;
+    min-height: 10vh;
+    margin: 74px auto;
+    margin-bottom: 74px;
+    padding: 27px;
+    background-image: linear-gradient(to bottom, #000000, rgb(34, 15, 68));
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 2em;
+  }
+  
+  .title h2 {
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #ffc778;
+    font-size: 50px;
+  }
+  
+  .title h4 {
+    font-family: 'helvetica';
+    line-height: 3.5;
+    font-weight: 400;
+    letter-spacing: 2.7px;
+    font-size: 18px;
+    color: #acacac;
+    max-width: 700px;
+  }
+  
+  @media (max-width: 1190px) {
+    .title {
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+      align-items: center;
+    }
+  
+    .title .text {
+      text-align: center;
+    }
+  }
