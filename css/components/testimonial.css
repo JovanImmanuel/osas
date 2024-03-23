@@ -1,0 +1,176 @@
+.testimonials {
+    max-width: 1270px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 127px;
+    margin-top: 127px;
+    background-image: linear-gradient(to bottom, #000000, rgb(34, 15, 68));
+    /* Dark background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.testimonials h2 {
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #ffc778;
+    font-size: 30px;
+    margin-bottom: 1.7%;
+    margin-top: 2.7%;
+}
+
+.testimonials p {
+    text-align: center;
+    font-family: 'helvetica';
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgb(111, 111, 111);
+    font-size: 18px;
+    max-width: 700px;
+    margin-bottom: 1.7%;
+}
+
+.testimonial-container {
+    max-width: 1270px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'helvetica';
+}
+
+.testimonial {
+    background: rgba(0, 0, 0, 0.5);
+    /* Darker testimonial background */
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 17px;
+    color: #fff;
+    /* Light text */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Slight shadow for depth */
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 30%;
+}
+
+.testimonial blockquote {
+    font-style: normal;
+    font-weight: 300;
+    /* Lighter font-weight */
+    color: #acacac;
+    line-height: 27px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.user-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info strong {
+    font-size: 16px;
+    color: #c9c9c9;
+    /* White text for name */
+}
+
+.user-info span {
+    font-size: 14px;
+    color: rgb(111, 111, 111);
+    /* Lighter text for job title */
+}
+
+.rating {
+    color: #ffc778;
+    font-size: 18px;
+    margin-top: 10px;
+    /* Space between rating and user info */
+}
+
+@media (max-width: 1190px) {
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .testimonials,
+    .testimonial-container,
+    .testimonial {
+        /* Reduce width and padding for small screens */
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .user-info img {
+        /* Adjust image size for small screens */
+        width: 30px;
+        height: 30px;
+    }
+
+    .testimonials p {
+        margin-bottom: 74px;
+    }
+
+    .testimonial {
+        /* Ensure testimonials don't have a fixed height */
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .testimonial-container {
+        padding: 0px;
+    }
+
+    .testimonial {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .testimonials h2 {
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: #ffc778;
+        font-size: 22px;
+        margin-bottom: 7.4%;
+        line-height: 30px;
+    }
+
+    .testimonials p {
+        line-height: 1.5;
+        letter-spacing: 2px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .testimonial blockquote {
+        font-style: normal;
+        font-weight: 300;
+        /* Lighter font-weight */
+        color: #acacac;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+
+    .user-info span {
+        font-size: 13px;
+    }
+
+    .user-info strong {
+        font-size: 14px;
+        color: #c9c9c9;
+        /* White text for name */
+    }
+}

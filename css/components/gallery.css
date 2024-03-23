@@ -1,0 +1,111 @@
+.gallery {
+    gap: 182px;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('background.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding-top: 100px;
+    padding-left: 370px;
+    padding-right: 370px;
+}
+
+.gallery h1 {
+    line-height: 2;
+    letter-spacing: 9px;
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 100px;
+}
+
+.gallery h2 {
+    line-height: 0.74;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #ffc778;
+    font-size: 20px;
+    opacity: 1;
+    line-height: 27px;
+}
+
+.gallery h3 {
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #ffc778;
+    font-size: 18px;
+}
+
+.gallery h4 {
+    font-family: 'Lato';
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: white;
+    font-size: 18px;
+}
+
+@media (max-width: 1190px) {
+    .gallery {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .gallery .text {
+        order: 2;
+        text-align: center;
+        margin-top: 40px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .gallery img {
+        order: 1;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery h1 {
+        line-height: 2;
+        letter-spacing: 9px;
+        color: white;
+        font-size: 27px;
+        font-weight: 100;
+        margin-bottom: 40px;
+    }
+
+    .gallery h2 {
+        font-weight: 400;
+        letter-spacing: 5px;
+        color: #ffc778;
+        font-size: 15px;
+        opacity: 1;
+        line-height: 20px;
+    }
+}
+
+.gallery .btn-blue {
+    line-height: 10;
+    font-weight: bold;
+    letter-spacing: 5px;
+    border: 2px solid #999999;
+    background-color: rgba(255, 255, 255, 0);
+    color: #999999;
+    padding: 20px 40px;
+    margin-top: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 27px;
+    transition: 0.17s;
+}
+
+.gallery .btn-blue:hover {
+    border-color: #ffc77886;
+    color: #ffc778;
+    border-radius: 10px;
+}

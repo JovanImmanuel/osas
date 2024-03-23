@@ -1,0 +1,132 @@
+.ending {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 1270px;
+    min-height: 10vh;
+    margin: 74px auto;
+    margin-bottom: 127px;
+    margin-bottom: 127px;
+    padding: 110px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 2em;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+}
+
+.ending video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.ending::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.74);
+    z-index: -1;
+}
+
+.ending .btn-blue {
+    line-height: 10;
+    font-weight: bold;
+    letter-spacing: 5px;
+    border: 2px solid #999999;
+    background-color: rgba(255, 255, 255, 0);
+    color: #999999;
+    padding: 20px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 27px;
+    transition: 0.17s;
+}
+
+.ending .btn-blue:hover {
+    border-color: #ffc77886;
+    color: #ffc778;
+    border-radius: 10px;
+}
+
+.ending .text {
+    text-align: center;
+}
+
+.ending h2 {
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #ffc778;
+    font-size: 100px;
+}
+
+@media (max-width: 1190px) {
+    .ending {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+    }
+
+    .ending .text {
+        order: 2;
+        text-align: center;
+        margin-top: 40px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .ending h2 {
+        font-size: 40px;
+    }
+
+    .ending img {
+        order: 1;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .ending {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+    }
+
+    .ending .text {
+        order: 2;
+        text-align: center;
+        margin-top: 40px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .ending h2 {
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: #ffc778;
+        font-size: 22px;
+        margin-bottom: 7.4%;
+        line-height: 30px;
+    }
+
+    .ending img {
+        order: 1;
+        width: 100%;
+    }
+}
